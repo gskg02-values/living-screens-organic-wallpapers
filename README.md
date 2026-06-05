@@ -40,7 +40,7 @@ From a design perspective, it has several strengths:
 •	Dark regions help reduce OLED power consumption on many smartphone screens.
 •	No visual pollution from icons, gradients, or decorative elements.
 •	The message becomes the hero rather than the artwork.
-•	Environment theme is communicated through color and simplicity itself.
+•	Environment theme is communicated through nature and simplicity itself.
 
 
 **THE UNSAID** is a quiet reflective space. 
