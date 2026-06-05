@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVING SCREENS — The Showroom</title>
+    
+    <!-- 1. THE GOOGLE ANALYTICS BASE SCRIPT -->
+    <!-- Replace 'G-XXXXXXXXXX' with your real Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true }); // Keeps users anonymous
+    </script>
+    <!-- End Google Analytics -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #0d0f0e; 
+            color: #e3e8e5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .glass-sanctuary {
+            background-color: rgba(13, 15, 14, 0.85); 
+            max-width: 1500px;
+            margin: 0 auto;
+            min-height: 100vh;
+            padding: 20px 40px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.8);
+        }
+
+        .hero-container {
+            max-width: 1000px;
+            margin: 20px auto 40px auto;
+            text-align: center;
+        }
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            display: block;
+        }
+
+        header {
+            max-width: 600px;
+            margin: 0 auto 60px auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 25px;
+            color: #a8bba2;
+        }
+        .why-unique {
+            font-size: 0.95rem;
+            color: #b0b8b3;
+            text-align: justify;
+            border-left: 2px solid #3e4741;
+            padding-left: 15px;
+            margin-top: 20px;
+        }
+        .showroom-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            padding-bottom: 60px;
+        }
+        .viewing-room {
+            background: #141816;
+            border: 1px solid #222925;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .screen-meta {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            color: #8fa093;
+        }
+        .canvas-frame {
+            width: 100%;
+            aspect-ratio: 9 / 20;
+            background-color: #1a201d;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+        .canvas-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .interaction-panel {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .action-btn {
+            background: none;
+            border: 1px solid #333d37;
+            color: #b0b8b3;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .action-btn svg {
+            width: 20px;
+            height: 20px;
+            stroke-width: 2;
+        }
+        .action-btn:hover {
+            border-color: #a8bba2;
+            color: #e3e8e5;
+        }
+        .download-btn {
+            background: #232d27;
+            border: 1px solid #384a3f;
+            color: #a8bba2;
+            flex: 1.5;
+        }
+        .download-btn:hover {
+            background: #2d3b33;
+            border-color: #4e6657;
+        }
+        footer {
+            margin-top: 80px;
+            padding: 40px 0;
+            border-top: 1px solid #1f2622;
+            text-align: center;
+        }
+        .punch-caption {
+            font-size: 1.1rem;
+            font-style: italic;
+            letter-spacing: 1px;
+            color: #8fa093;
+            font-weight: 300;
+        }
+
+        .environmental-mission {
+            font-size: 0.9rem;
+            color: #6a7a70;
+            margin-top: 15px;
+            letter-spacing: 0.5px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .glass-sanctuary {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-sanctuary">
+        
+        <div class="hero-container">
+            <img src="Showroom_Backdrop.jpg" alt="Plants to Macro Photography to Living Screens" class="hero-image">
+        </div>
+
+        <header>
+            <h1>Living Screens</h1>
+            <div class="screen-meta">— The Vegetarian Series —</div>
+            <div class="why-unique">
+                <strong>Worlds first Living screens Live online.</strong> In a world of noisy digital splashing waves, our screens offer a deliberate, visual intervention. We capture the deep architectural intelligence of temporary botanical forms, isolating them into raw visual expressions. These are not static digital renders; they are clean, breathing, plant-based sanctuaries meticulously structured to offer a pressure-free space of cognitive relief for the exhausted mind.
+            </div>
+        </header>
+
+        <main class="showroom-container">
+
+            <section class="viewing-room">
+                <div class="screen-meta">I. Purpose</div>
+                <div class="canvas-frame">
+                    <img src="Purpose.jpg" alt="Living Screen - Purpose">
+                </div>
+                <div class="interaction-panel">
+                    <button class="action-btn" aria-label="Like" onclick="registerVote('purpose', 'like')">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                    </button>
+                    <button class="action-btn" aria-label="Dislike" onclick="registerVote('purpose', 'dislike')">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2"></path></svg>
+                    </button>
+                    <!-- Added the 3rd parameter 'purpose' to track WHICH image was downloaded -->
+                    <button class="action-btn download-btn" aria-label="Download" onclick="forceDownload('Screenshot_20260525-194244_Gallery.jpg', 'LivingScreen_Purpose.jpg', 'purpose')">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="viewing-room">
+                <div class="screen-meta">II. Perseverance</div>
+                <div class="canvas-frame">
+                    <img src="Perseverance.jpg" alt="Living Screen - Perseverance">
+                </div>
+                <div class="interaction-panel">
+                    <button class="action-btn" aria-label="Like" onclick="registerVote('perseverance', 'like')">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                    </button>
+                    <button class="action-btn" aria-label="Dislike" onclick="registerVote('perseverance', 'dislike')">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2"></path></svg>
+                    </button>
+                    <!-- Added the 3rd parameter 'perseverance' -->
+                    <button class="action-btn download-btn" aria-label="Download" onclick="forceDownload('Screenshot_20260527-201602_Gallery.jpg', 'LivingScreen_Perseverance.jpg', 'perseverance')">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="viewing-room">
+                <div class="screen-meta">III. Persistence</div>
+                <div class="canvas-frame">
+                    <img src="Persistence.jpg" alt="Living Screen - Persistence">
+                </div>
+                <div class="interaction-panel">
+                    <button class="action-btn" aria-label="Like" onclick="registerVote('persistence', 'like')">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                    </button>
+                    <button class="action-btn" aria-label="Dislike" onclick="registerVote('persistence', 'dislike')">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2"></path></svg>
+                    </button>
+                    <!-- Added the 3rd parameter 'persistence' -->
+                    <button class="action-btn download-btn" aria-label="Download" onclick="forceDownload('Screenshot_20260527-143638_Gallery.jpg', 'LivingScreen_Persistence.jpg', 'persistence')">
+                        <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    </button>
+                </div>
+            </section>
+
+            <script>
+                const container = document.querySelector('.showroom-container');
+                const romanNumerals = ["IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX", "XXI", "XXII", "XXIII", "XXIV", "XXV"];
+                
+                for (let i = 4; i <= 25; i++) {
+                    const numIndex = i - 4;
+                    const fileName = `Screen_${i}.jpg`;
+                    const roomName = `Screen ${i}`;
+                    // Adjusted the loop to pass the screen ID into the forceDownload function
+                    const roomHTML = `
+                        <section class="viewing-room">
+                            <div class="screen-meta">${romanNumerals[numIndex]}. ${roomName}</div>
+                            <div class="canvas-frame">
+                                <img src="${fileName}" alt="Living Screen - ${roomName}">
+                            </div>
+                            <div class="interaction-panel">
+                                <button class="action-btn" aria-label="Like" onclick="registerVote('screen_${i}', 'like')">
+                                    <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                                </button>
+                                <button class="action-btn" aria-label="Dislike" onclick="registerVote('screen_${i}', 'dislike')">
+                                    <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2"></path></svg>
+                                </button>
+                                <button class="action-btn download-btn" aria-label="Download" onclick="forceDownload('${fileName}', 'LivingScreen_${i}.jpg', 'screen_${i}')">
+                                    <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                </button>
+                            </div>
+                        </section>
+                    `;
+                    container.insertAdjacentHTML('beforeend', roomHTML);
+                }
+            </script>
+
+        </main>
+
+        <footer>
+            <div class="punch-caption">"Hardware connects the world. Living Screens reconnect the user."</div>
+            <div class="environmental-mission">
+                Sourced from the earth at zero cost; rendered without a single wasted watt.<br>
+                Conserving today's energy to ensure the resilience and continuity of a greener tomorrow.
+            </div>
+        </footer>
+
+    </div> 
+
+    <!-- 2. THE EVENT TRACKING WIRING -->
+    <script>
+        function registerVote(screenId, voteType) {
+            console.log(`Registered ${voteType} for screen: ${screenId}`);
+            
+            // --> EVENT TRACKER FOR LIKES & DISLIKES <--
+            // This checks if Google Analytics is loaded, then sends the specific action (like or dislike)
+            if (typeof gtag === 'function') {
+                gtag('event', voteType, {
+                    'event_category': 'Engagement',
+                    'event_label': screenId
+                });
+            }
+        }
+
+        // We added 'screenId' as the 3rd requirement so the tracker knows exactly WHICH photo was downloaded
+        function forceDownload(url, filename, screenId) {
+            
+            // --> EVENT TRACKER FOR DOWNLOADS <--
+            // Sends a 'download' ping tied directly to the name of the screen (e.g., 'persistence')
+            if (typeof gtag === 'function' && screenId) {
+                gtag('event', 'download', {
+                    'event_category': 'Engagement',
+                    'event_label': screenId
+                });
+            }
+
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) throw new Error("File not found");
+                    return response.blob();
+                })
+                .then(blob => {
+                    const blobUrl = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = blobUrl;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(blobUrl);
+                    document.body.removeChild(a);
+                })
+                .catch(err => alert('Download could not be completed. Make sure the image file is in the folder and matches the correct filename exactly.'));
+        }
+    </script>
+</body>
+</html>
