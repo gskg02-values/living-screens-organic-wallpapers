@@ -304,7 +304,8 @@
                 <section class="viewing-room">
                     <div class="screen-meta">${screen.numeral}. ${screen.name}</div>
                     <div class="canvas-frame">
-                        <img src="${screen.file}" alt="Living Screen - ${screen.name}">
+                        <img src="${screen.file}" alt="Living Screen - ${screen.name}" loading="lazy">
+
                     </div>
                     <div class="interaction-panel">
                         <button class="action-btn" aria-label="Like" onclick="registerVote('${trackingId}', 'like')">
