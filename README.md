@@ -1,6 +1,6 @@
 Dedicated to Nature towards WORLD ENVIRONMENT DAY 2026 - June 5th.
 
-**A ZERO WATT, ZERO EYE STRAIN, ZERO RESOURCE WALLPAPER SCREENS FOR SMART PHONES.**
+**ZERO WATT, ZERO EYE STRAIN, ZERO RESOURCE WALLPAPER SCREENS FOR SMART PHONES.**
 
 A small contribution towards Nature for Energy conservation by creating Greenery awareness in a UNIQUE sense through Living Screens for Smart Phones. Get in & Experience it yourself.
 
