@@ -1,5 +1,8 @@
 Dedicated to Nature towards WORLD ENVIRONMENT DAY 2026 - June 5th.
 
+### The Vision
+We built this zero-watt digital sanctuary as a deliberate visual intervention. By capturing the architecture of the seen but not deeply seen, we isolate temporary botanical forms into raw, breathing screens. Our goal is to offer a pressure-free space of cognitive relief for the exhausted mind.
+
 **ZERO WATT, ZERO EYE STRAIN, ZERO RESOURCE WALLPAPER SCREENS FOR SMART PHONES.**
 
 A small contribution towards Nature for Energy conservation by creating Greenery awareness in a UNIQUE sense through Living Screens for Smart Phones. Get in & Experience it yourself.
