@@ -5,7 +5,7 @@ We built this zero-watt digital sanctuary as a deliberate visual intervention. B
 
 **ZERO WATT, ZERO EYE STRAIN, ZERO RESOURCE WALLPAPER SCREENS FOR SMART PHONES.**
 
-A small contribution towards Nature for Energy conservation by creating Greenery awareness in a UNIQUE sense through Living Screens for Smart Phones. Get in & Experience it yourself.
+A small contribution towards Nature for Energy conservation by creating Greenery awareness in a UNIQUE sense through Zero Watts Living Screens for Smart Phones. Get in, Experience it yourself and Contribute.
 
 	Key Theme behind the screen development was "CONSERVATION OF ENERGY & "CARE FOR OUR PLANET."
 	Inspiration being "Nature"
