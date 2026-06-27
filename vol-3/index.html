@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume 3: Climate Resilience | Living Screens</title>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KE57709HNT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KE57709HNT');
+    </script>
+	
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #0d0f0e; 
+            color: #e3e8e5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+
+/* THEMATIC VOLUME HERO IMAGE */
+        .volume-hero {
+            max-width: 650px;
+            width: 100%;
+            margin: 0 auto 40px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            border: 1px solid #222925;
+            background-color: #141816;
+        }
+
+        .volume-hero img {
+            width: 100%;
+            max-height: 250px; /* Locks the height to a shorter, elegant banner size */
+            object-fit: cover; /* Prevents the image from squishing */
+            display: block;
+        }
+
+
+
+        /* NAVIGATION BAR */
+        .top-nav {
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-link {
+            color: #8fa093;
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .back-link:hover {
+            color: #c2d1c9;
+        }
+
+        .glass-sanctuary {
+            background-color: rgba(13, 15, 14, 0.85); 
+            max-width: 1500px;
+            margin: 0 auto;
+            min-height: 100vh;
+            padding: 0 40px 20px 40px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.8);
+        }
+
+        header {
+            max-width: 800px;
+            margin: 0 auto 60px auto;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 25px;
+            color: #a8bba2;
+        }
+        
+        .screen-meta-header {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+            color: #8fa093;
+            text-align: center;
+        }
+
+        .why-unique {
+            font-size: 0.95rem;
+            color: #b0b8b3;
+            text-align: justify;
+            border-left: 2px solid #3e4741;
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+
+        .showroom-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            padding-bottom: 60px;
+        }
+
+        .viewing-room {
+            background: #141816;
+            border: 1px solid #222925;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .screen-meta {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #8fa093;
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .canvas-frame {
+            width: 100%;
+            aspect-ratio: 9 / 20;
+            background-color: #1a201d;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+        }
+
+        .canvas-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .interaction-panel {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .action-btn {
+            background: none;
+            border: 1px solid #333d37;
+            color: #b0b8b3;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn svg {
+            width: 20px;
+            height: 20px;
+            stroke-width: 2;
+        }
+
+        .action-btn:hover {
+            border-color: #a8bba2;
+            color: #e3e8e5;
+        }
+
+        .download-btn {
+            background: #232d27;
+            border: 1px solid #384a3f;
+            color: #a8bba2;
+            flex: 1.5;
+        }
+
+        .download-btn:hover {
+            background: #2d3b33;
+            border-color: #4e6657;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 40px 0;
+            border-top: 1px solid #1f2622;
+            text-align: center;
+        }
+
+        .environmental-mission {
+            font-size: 0.9rem;
+            color: #6a7a70;
+            margin-top: 15px;
+            letter-spacing: 0.5px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        .copyright-text {
+            font-size: 0.75rem;
+            color: #546359;
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }     
+
+        @media (max-width: 768px) {
+            .glass-sanctuary {
+                padding: 15px;
+            }
+            .top-nav {
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-sanctuary">
+        
+        <nav class="top-nav">
+            <a href="../index.html" class="back-link">← Return to Main Hall</a>
+        </nav>
+
+
+<header>
+            <div class="volume-hero">
+                <img src="Hero image 3.jpg" alt="The Green Series Theme Landscape">
+            </div>
+
+        
+            <h1>Living Screens</h1>
+            <div class="screen-meta-header">— Volume 3: Climate Resilience —</div>
+            
+            <div class="why-unique">
+                <strong>WORLD'S FIRST LIVING SCREENS</strong>
+		<br>
+		"A small step toward Zero Digital Pollution.
+		A conscious screen. A conscious choice. A conscious future."
+
+                <br><br>
+                <strong>Zero Watt, Zero Eye Strain, Zero Resources Wallpaper Screens for Smart Phones</strong>
+                <br><br>
+                The question is no longer whether change is occurring. The question is how resilient we become in responding to it. Resilience means preparing before disruption arrives and 		strengthening systems before they fail.
+		Climate resilience begins with responsible habits, efficient technologies, and communities that value prevention over reaction.
+		<br><br>
+		<strong><i>"Resilience is not surviving the storm. It is preparing before the clouds gather."<i></strong>
+
+            </div>
+        </header>
+
+        <main class="showroom-container" id="showroom"></main>
+
+        <footer>
+            <div class="environmental-mission">
+                Living Screens™<br>
+		A Small Step Toward Zero Digital Pollution; Energy Conserved. Emissions Avoided. Awareness Created.🌍🌱
+
+            </div>
+            <div class="copyright-text">
+                &copy; 2026 | A UNIQUE CO-CREATION EFFORT | FOR PLANET FOR FUTURE
+            </div>
+        </footer>
+
+    </div> 
+
+    <script>
+        // ====================================================================
+        // THE SILENT GENERATOR SCRIPT
+        // Automatically builds exactly 100 formatted screens (01 to 100)
+        // ====================================================================
+
+        const container = document.getElementById('showroom');
+        let htmlBuffer = '';
+
+        for (let i = 1; i <= 100; i++) {
+            // Pad the number so 1 becomes "01", 9 becomes "09", 10 stays "10"
+            const numStr = i.toString().padStart(2, '0');
+            
+            // Expected file name layout: 01.jpg, 02.jpg, etc.
+            const fileName = `${numStr}.jpg`;
+            const trackingId = `screen_${numStr}`;
+
+            htmlBuffer += `
+                <section class="viewing-room">
+                    <div class="screen-meta">${numStr}</div>
+                    <div class="canvas-frame">
+                        <img src="${fileName}" alt="Living Screen ${numStr}" loading="lazy">
+                    </div>
+                    <div class="interaction-panel">
+                        <button class="action-btn" aria-label="Like" onclick="registerVote('${trackingId}', 'like')">
+                            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                        </button>
+                        <button class="action-btn" aria-label="Dislike" onclick="registerVote('${trackingId}', 'dislike')">
+                            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-2"></path></svg>
+                        </button>
+                        <button class="action-btn download-btn" aria-label="Download" onclick="forceDownload('${fileName}', 'LivingScreen_Vol1_${numStr}.jpg', '${trackingId}')">
+                            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        </button>
+                    </div>
+                </section>
+            `;
+        }
+
+        // Inject all 100 generated screens into the showroom container at once
+        container.innerHTML = htmlBuffer;
+
+        // --- Event Tracking Wiring ---
+        function registerVote(screenId, voteType) {
+            console.log(`Registered ${voteType} for screen: ${screenId}`);
+            if (typeof gtag === 'function') {
+                gtag('event', voteType, {
+                    'event_category': 'Engagement',
+                    'event_label': screenId
+                });
+            }
+        }
+
+        function forceDownload(url, filename, screenId) {
+            if (typeof gtag === 'function' && screenId) {
+                gtag('event', 'download', {
+                    'event_category': 'Engagement',
+                    'event_label': screenId
+                });
+            }
+
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) throw new Error("File not found");
+                    return response.blob();
+                })
+                .then(blob => {
+                    const blobUrl = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = blobUrl;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(blobUrl);
+                    document.body.removeChild(a);
+                })
+                .catch(err => alert('Download could not be completed. Make sure the image file is in the folder and matches the correct filename exactly.'));
+        }
+    </script>
+</body>
+</html>
